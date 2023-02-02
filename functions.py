@@ -51,6 +51,10 @@ class func:
         self.text=""
         self.label.setText("")
 
+    def func_delete(self):
+        self.text=self.text[:-1]
+        self.label.setText(self.text)
+
     def func_kopaytiruv(self):
         self.text+="*"
         self.label.setText(self.text)

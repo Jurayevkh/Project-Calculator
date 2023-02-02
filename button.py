@@ -11,13 +11,19 @@ class Button:
 
     def button(self):
         clear=QPushButton("AC",self.screen)
-        clear.setGeometry(5,65,87,50)
+        clear.setGeometry(5,65,57,50)
         clear.setFont(QFont("Calibri",20))
         clear.setStyleSheet("background-color:#D4D4D2; color:black; border:2px solid #D4D4D2")
         clear.clicked.connect(self.obj.func_clear)
 
+        delete=QPushButton("⌦",self.screen)
+        delete.setGeometry(65,65,57,50)
+        delete.setFont(QFont("Calibri",20))
+        delete.setStyleSheet("background-color:#D4D4D2; color:black; border:2px solid #D4D4D2")
+        delete.clicked.connect(self.obj.func_delete)
+
         beminus=QPushButton("%",self.screen)
-        beminus.setGeometry(95,65,87,50)
+        beminus.setGeometry(125,65,57,50)
         beminus.setFont(QFont("Calibri",20))
         beminus.setStyleSheet("background-color:#D4D4D2; color:black; border:2px solid #D4D4D2")
         beminus.clicked.connect(self.obj.func_foiz)
